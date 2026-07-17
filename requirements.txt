@@ -1,0 +1,42 @@
+# Web Framework
+fastapi
+uvicorn[standard]
+# Database
+sqlalchemy
+alembic
+# Validation
+pydantic
+pydantic-settings
+python-multipart
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+# Logging
+structlog
+# OpenTelemetry
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
+opentelemetry-exporter-otlp
+# LangChain (Phases 2-4)
+langchain
+langchain-google-genai
+langchain-community
+langchain-chroma
+chromadb
+langsmith
+# MCP (Phase 4)
+fastmcp
+# UI (Phases 2-4)
+streamlit
+gradio
+# LangGraph (Phase 5)
+langgraph
+# Testing
+pytest
+pytest-asyncio
+httpx
+pytest-cov
+# Utilities
+python-dotenv
+requests
+opentelemetry-instrumentation-openai

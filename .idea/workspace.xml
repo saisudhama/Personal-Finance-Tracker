@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52e4f226-5dcc-46d5-80d9-131c0eac5a05" name="Changes" comment="Commiting all changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "saisudhama"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/saisudhama/Personal-Finance-Tracker.git",
+    "accountId": "a1a4099b-5be2-4b6a-b765-2b751b441779"
+  }
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.6541473495598227" />
+      <entry key="MS500" value="3.3938216921663167" />
+      <entry key="S2" value="4.488302913143684" />
+      <entry key="S5" value="5.0184996979389105" />
+      <entry key="S10" value="6.256381543567685" />
+      <entry key="S30" value="10.873126865631649" />
+      <entry key="S60" value="15.408996745339719" />
+      <entry key="M2" value="20.629615952783023" />
+      <entry key="M5" value="26.327654544926798" />
+      <entry key="M10" value="29.550091074283756" />
+      <entry key="M15" value="31.444156404934564" />
+      <entry key="M30" value="34.67077419132404" />
+      <entry key="H1" value="37.26726842385763" />
+      <entry key="H2" value="38.99036261342908" />
+      <entry key="H4" value="40.47450371413941" />
+      <entry key="D1" value="46.93851133787129" />
+      <entry key="W1" value="50.295332352240436" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.547471168787983" />
+      <entry key="MS500" value="3.3175145652569773" />
+      <entry key="S2" value="4.461772726852224" />
+      <entry key="S5" value="5.006633125667375" />
+      <entry key="S10" value="6.249103835706579" />
+      <entry key="S30" value="10.868108164605022" />
+      <entry key="S60" value="15.402139885209014" />
+      <entry key="M2" value="20.621802600953117" />
+      <entry key="M5" value="26.322132494956687" />
+      <entry key="M10" value="29.5466223494404" />
+      <entry key="M15" value="31.441581254481186" />
+      <entry key="M30" value="34.6692730369745" />
+      <entry key="H1" value="37.266434341320576" />
+      <entry key="H2" value="38.989917864180654" />
+      <entry key="H4" value="40.47426652944925" />
+      <entry key="D1" value="46.93845733676425" />
+      <entry key="W1" value="50.29532351262878" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3GZge8zmY1KlmRKhw6UdGHEGiGf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50341a9f1f9c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.26222.68" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52e4f226-5dcc-46d5-80d9-131c0eac5a05" name="Changes" comment="" />
+      <created>1784184602271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784184602271</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commiting all changes">
+      <option name="closed" value="true" />
+      <created>1784209616794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784209616794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commiting all changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commiting all changes" />
+  </component>
+</project>
