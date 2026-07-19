@@ -1,0 +1,495 @@
+/* ============================================================
+   Personal Finance Tracker — Design Tokens
+   Concept: a modern passbook / ledger. Numbers are precise,
+   right-aligned, and monospaced, like a real bank book.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Color */
+  --color-bg: #EFF2F0;
+  --color-surface: #FFFFFF;
+  --color-surface-sunken: #E7EBE8;
+  --color-ink: #14231F;
+  --color-muted: #6B7A75;
+  --color-line: #DADFDB;
+
+  --color-primary: #1B4B43;
+  --color-primary-light: #3D7A6C;
+  --color-primary-tint: #E4EDE9;
+
+  --color-success: #4B8B6F;
+  --color-success-tint: #E7F0EA;
+  --color-warning: #C99A3E;
+  --color-warning-tint: #FBF1DF;
+  --color-danger: #C1443A;
+  --color-danger-tint: #FAE7E5;
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', monospace;
+
+  /* Rhythm */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 2px rgba(20, 35, 31, 0.06), 0 4px 16px rgba(20, 35, 31, 0.05);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 860px) {
+  .app-shell { grid-template-columns: 1fr; }
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  background: var(--color-primary);
+  color: #F2F6F4;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.brand-mark {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.brand-sub {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(242, 246, 244, 0.6);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(242, 246, 244, 0.75);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-item:hover { background: rgba(255, 255, 255, 0.06); color: #fff; }
+.nav-item.active { background: rgba(255, 255, 255, 0.12); color: #fff; }
+
+.nav-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  font-size: 12px;
+  color: rgba(242, 246, 244, 0.5);
+  line-height: 1.5;
+}
+
+/* ---------- Main ---------- */
+.main {
+  padding: 36px 44px 60px;
+  max-width: 1180px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.page-eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin: 0 0 4px;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-line);
+}
+
+.card-pad { padding: 24px; }
+
+.section-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-muted);
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+/* ---------- Summary strip ---------- */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 700px) {
+  .summary-grid { grid-template-columns: 1fr; }
+}
+
+.summary-card {
+  padding: 20px 22px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  box-shadow: var(--shadow-card);
+}
+
+.summary-label {
+  font-size: 12px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+
+.summary-value {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.summary-value.positive { color: var(--color-primary); }
+.summary-value.negative { color: var(--color-danger); }
+
+.summary-delta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-top: 6px;
+}
+
+/* ---------- Passbook account cards ---------- */
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.passbook {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 20px 20px 20px 26px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+/* perforated stub edge — the signature detail */
+.passbook::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background-image: radial-gradient(circle, var(--color-bg) 2.5px, transparent 2.6px);
+  background-size: 10px 14px;
+  background-position: center;
+  border-right: 1px dashed var(--color-line);
+}
+
+.passbook-type {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-muted);
+  margin: 0 0 6px;
+}
+
+.passbook-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.passbook-balance {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.passbook-currency {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-left: 4px;
+  font-family: var(--font-body);
+}
+
+/* ---------- Ledger (transactions) ---------- */
+.ledger-row {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px dashed var(--color-line);
+}
+
+.ledger-row:last-child { border-bottom: none; }
+
+.ledger-date {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.ledger-desc { display: flex; flex-direction: column; gap: 3px; }
+
+.ledger-merchant { font-size: 14px; font-weight: 500; }
+
+.ledger-category {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: var(--color-surface-sunken);
+  color: var(--color-muted);
+  text-transform: capitalize;
+}
+
+.ledger-amount {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.ledger-amount.credit { color: var(--color-success); }
+.ledger-amount.debit { color: var(--color-ink); }
+
+/* ---------- Budget bars (ink-fill) ---------- */
+.budget-row { margin-bottom: 18px; }
+.budget-row:last-child { margin-bottom: 0; }
+
+.budget-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.budget-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.budget-figures {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.budget-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-surface-sunken);
+  overflow: hidden;
+}
+
+.budget-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.budget-fill.ok { background: var(--color-success); }
+.budget-fill.warn { background: var(--color-warning); }
+.budget-fill.over { background: var(--color-danger); }
+
+.budget-alert-tag {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.budget-alert-tag.warn { background: var(--color-warning-tint); color: #8A6317; }
+.budget-alert-tag.over { background: var(--color-danger-tint); color: var(--color-danger); }
+
+/* ---------- Forms ---------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 560px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.field input,
+.field select,
+.field textarea {
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-line);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--color-primary-light);
+  background: var(--color-surface);
+}
+
+.field-span-2 { grid-column: span 2; }
+@media (max-width: 560px) { .field-span-2 { grid-column: span 1; } }
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn-primary { background: var(--color-primary); color: #fff; }
+.btn-primary:hover { background: var(--color-primary-light); }
+
+.btn-block { width: 100%; margin-top: 4px; }
+
+.form-toggle {
+  display: flex;
+  gap: 4px;
+  background: var(--color-surface-sunken);
+  padding: 3px;
+  border-radius: 999px;
+  width: fit-content;
+  margin-bottom: 4px;
+}
+
+.toggle-option {
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-muted);
+}
+
+.toggle-option.active.credit { background: var(--color-success-tint); color: var(--color-success); }
+.toggle-option.active.debit { background: var(--color-danger-tint); color: var(--color-danger); }
+
+/* ---------- Empty states ---------- */
+.empty-state {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+.empty-state p { margin: 4px 0; font-size: 13px; }
+.empty-state .empty-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  color: var(--color-ink);
+  margin-bottom: 4px;
+}
+
+/* ---------- Layout helpers ---------- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+.stack { display: flex; flex-direction: column; gap: 20px; }
